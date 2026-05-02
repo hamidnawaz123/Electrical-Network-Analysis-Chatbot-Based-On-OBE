@@ -19,7 +19,7 @@ from sentence_transformers import SentenceTransformer
 
 # ── Paths & Config ────────────────────────────────────────────────────────────
 
-CHROMA_DIR      = r"D:\Genai\embeddings\chroma_db"
+CHROMA_DIR      = "embeddings/chroma_db"
 COLLECTION_NAME = "ena_docs"
 EMBED_MODEL     = "all-MiniLM-L6-v2"   # must match ingest.py
 TOP_K           = 4                     # number of chunks to retrieve
