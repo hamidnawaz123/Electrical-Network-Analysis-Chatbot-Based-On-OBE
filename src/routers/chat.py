@@ -23,7 +23,7 @@ def chat(request: ChatRequest):
     sources = list({c["source"] for c in chunks})
 
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-120b",
         messages=[
             {"role": "system", "content": "You are an ENA course assistant. Answer using ONLY the provided context."},
             {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {request.question}"}
