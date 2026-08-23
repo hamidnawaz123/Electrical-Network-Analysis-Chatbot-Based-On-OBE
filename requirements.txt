@@ -2,3 +2,10 @@
 requests
 fastapi
 uvicorn[standard]
+groq
+pydantic
+python-dotenv
+pdfplumber
+chromadb
+python-docx
+sentence-transformers
